@@ -1,0 +1,65 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --font-size: 12px;
+    --font-weight: 400;
+    --heavy-font-weight: 700;
+    --gutter-size:16px;
+    --text-gutter-size: 16px;
+    --font-family: 'Outfit', sans-serif;
+    --container-width: 250px;
+    --card-height: calc(200 * 100vw / 1440);
+}
+
+body{
+    font-size: var(--font-size);
+    font-weight: 400;
+    font-family: var(--font-family);
+    background-color: var(--slate-300);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    width: var(--container-width);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: var(--gutter-size);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: fit-content;
+    height: var(--card-height);
+    letter-spacing: 0.2px;
+    min-height: fit-content;
+}
+
+p{
+    font-weight: var(--heavy-font-weight);
+    font-size: 22px;
+    letter-spacing: 0px;
+}
+
+.qr-container{
+    height: var(--container-width);
+    width: var(--container-width);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-container{
+    padding-left: var(--text-gutter-size);
+    padding-right: var(--text-gutter-size);
+}
